@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/css/normalize.css">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <script src="https://use.fontawesome.com/43f977d418.js"></script>
+    <title>UI Calendar</title>
+</head>
+<body>
+    <main class="flex-container">
+        <section class="widget">
+            <article class="widget__page-color desactive">
+                <div class="widget__header">
+                    <div class="widget__botonera widget__botonera--rigth ">
+                        <span class="widget__btnclose" id="btnClose"><i class="fa fa-times" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+                <div class="widget__content-title">
+                    <h2 class="widget__title">Choose theme color</h2>
+                </div>
+                <div class="widget__change-color">
+                    <div id="chooseColor" class="widget__choose-color">
+                        <span class="widget__color widget__color-tomato "></span>
+                        <span class="widget__color widget__color-mediumvioletred"></span>
+                        <span class="widget__color widget__color-crimson"></span>
+                        <span class="widget__color widget__color-orangered"></span>
+                        <span class="widget__color widget__color-orangered_light"></span>
+                        <span class="widget__color widget__color-darkorange"></span>
+                        <span class="widget__color widget__color-goldenrod"></span>
+                        <span class="widget__color widget__color-khaki activeColor"></span>
+                        <span class="widget__color widget__color-olivedrab"></span>
+                        <span class="widget__color widget__color-turquoise"></span>
+                        <span class="widget__color widget__color-darkcyan"></span>
+                        <span class="widget__color widget__color-royalblue"></span>
+                        <span class="widget__color widget__color-royalblue_dark"></span>
+                        <span class="widget__color widget__color-blue"></span>
+                        <span class="widget__color widget__color-blueviolet"></span>
+                        <span class="widget__color widget__color-darkviolet"></span>
+                    </div>
+                </div>
+            </article>
+            <article class="widget__page-calendar">
+                <div class="widget__header">
+                    <div class="widget__botonera widget__botonera--between">
+                        <span class="widget__btncolor" id="btnColor">x</span>
+                        <span class="widget__btnfeatures" id="btnFeatures"><i class="fa fa-th-large" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+                <div class="widget__content-month">
+                    <span><i class="fa fa-angle-left" id="prevMonth" aria-hidden="true"></i></span>
+                    <h2 class="widget__title--calendar" id="monthYearCalendar"></h2>
+                    <span><i class="fa fa-angle-right" id="nextMonth" aria-hidden="true"></i></span>
+                </div>
+                <div class="widget__calendar" id="contentDate">
+                    <div class="widget__daysnames">
+                        <span class="widget__dayname">S</span>
+                        <span class="widget__dayname">T</span>
+                        <span class="widget__dayname">M</span>
+                        <span class="widget__dayname">W</span>
+                        <span class="widget__dayname">T</span>
+                        <span class="widget__dayname">F</span>
+                        <span class="widget__dayname">S</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="widget__page-weather desactive">
+                <div class="widget__header">
+                    <div class="widget__botonera widget__botonera--between ">
+                        <span class="widget__btnback" id="btnBack"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                        <span class="widget__select-date">MAY <span class="widget__circle-date">3</span></span>
+                    </div>
+                </div>
+                <div class="widget__temperature">
+                    <span class="widget__icon-temperature"><i class="fa fa-cloud" aria-hidden="true"></i></span>
+                    <span class="widget__text-temperature">27</span>
+                </div>
+                <div class="widget__more">
+                    <h2 class="widget__features">Additional features</h2>
+                    <div class="widget__additional">
+                        <div class="widget__location">
+                            <span class="widget__feature-description"><i class="fa fa-map-marker" aria-hidden="true"></i>New York</span>
+                            <span class="widget__feature-description"><i class="fa fa-location-arrow" aria-hidden="true"></i>-0.13547</span>
+                            <span class="widget__feature-description"><i class="fa fa-location-arrow" aria-hidden="true"></i>51.51425</span>
+                        </div>
+                       <div class="widget__humidity">
+                            <span class="widget__feature-description"><i class="fa fa-thermometer-empty" aria-hidden="true"></i>Temp Min: 35</span>
+                            <span class="widget__feature-description"><i class="fa fa-thermometer-full" aria-hidden="true"></i>Temp Max:18</span>
+                            <span class="widget__feature-description"><i class="fa fa-tint" aria-hidden="true"></i>Humidity: 81</span>
+                       </div>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+    </main>
+     <script src="scripts/app/moment.js"></script>
+    <script src="scripts/app/app.js"></script>
+</body>
+</html>

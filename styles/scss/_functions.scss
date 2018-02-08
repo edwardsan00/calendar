@@ -1,0 +1,3 @@
+@function equalSpaces($spaces, $width:1){ 
+    @return percentage($width / $spaces);
+}
